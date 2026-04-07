@@ -1,0 +1,12 @@
+{
+  "name": "log-parser-9ef87a",
+  "version": "1.4.0",
+  "description": "A log-parser utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["log-parser", "utility"],
+  "license": "MIT"
+}
